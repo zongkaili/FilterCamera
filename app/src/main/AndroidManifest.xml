@@ -25,7 +25,11 @@
         <activity android:name=".activity.CameraActivity"
                   android:screenOrientation="portrait"
                   android:configChanges="keyboardHidden|orientation"
-                  android:theme="@style/AppTheme"></activity>
+                  android:theme="@style/AppTheme"/>
+        <activity android:name=".activity.AlbumActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>

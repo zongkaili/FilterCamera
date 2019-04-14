@@ -100,8 +100,7 @@ public class CameraActivity extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera);
         MagicEngine.Builder builder = new MagicEngine.Builder();
-        magicEngine = builder
-                .build((MagicCameraView)findViewById(R.id.glsurfaceview_camera));
+        magicEngine = builder.build((MagicCameraView)findViewById(R.id.glsurfaceview_camera));
         initView();
     }
 

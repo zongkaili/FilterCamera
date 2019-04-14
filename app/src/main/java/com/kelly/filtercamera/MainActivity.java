@@ -9,6 +9,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.PermissionChecker;
 import android.view.View;
 
+import com.kelly.filtercamera.activity.AlbumActivity;
 import com.kelly.filtercamera.activity.CameraActivity;
 
 public class MainActivity extends Activity {
@@ -29,6 +30,12 @@ public class MainActivity extends Activity {
                 }
             }
         });
+        findViewById(R.id.button_album).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(v.getId());
+            }
+        });
     }
 
     @Override
@@ -45,6 +52,9 @@ public class MainActivity extends Activity {
         switch (id) {
             case R.id.button_camera:
                 startActivity(new Intent(this, CameraActivity.class));
+                break;
+            case R.id.button_album:
+                startActivity(new Intent(this, AlbumActivity.class));
                 break;
             default:
                 break;

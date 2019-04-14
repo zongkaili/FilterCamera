@@ -10,7 +10,7 @@ import java.nio.ByteBuffer;
  */
 public class MagicJni {
     static{
-        System.loadLibrary("MagicBeautify");
+        System.loadLibrary("MagicJni");
     }
 
     public static native void jniInitMagicBeautify(ByteBuffer handler);

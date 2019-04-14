@@ -1,37 +1,21 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".activity.CameraActivity" >
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".activity.AlbumActivity" >
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <com.seu.magicfilter.widget.MagicCameraView
-            android:id="@+id/glsurfaceview_camera"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+        android:layout_height="0dp"
+        android:layout_weight="3">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
+        <com.seu.magicfilter.widget.MagicImageView
+            android:id="@+id/glsurfaceview_image"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:padding="5dp"
-            android:layout_alignParentEnd="true"
-            android:orientation="horizontal"
-            android:background="@android:color/transparent">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/btn_camera_mode"
-                android:src="@drawable/icon_video"/>
-            <ImageView
-                android:layout_marginLeft="10dp"
-                android:layout_width="wrap_content"
-                android:id="@+id/btn_camera_switch"
-                android:layout_height="wrap_content"
-                android:src="@drawable/selector_rewardcamera"/>
-        </LinearLayout>
+            android:layout_centerInParent="true"
+            android:visibility="invisible"/>
+
     </RelativeLayout>
     <FrameLayout
         android:layout_width="match_parent"
@@ -51,13 +35,6 @@
                 android:layout_weight="1.0"
                 android:src="@drawable/btn_camera_beauty"
                 android:scaleType="center">
-            </ImageView>
-            <ImageView
-                android:layout_width="0dip"
-                android:layout_height="match_parent"
-                android:layout_weight="1.0"
-                android:id="@+id/btn_camera_shutter"
-                android:src="@drawable/btn_camera_shutter">
             </ImageView>
             <ImageView
                 android:layout_width="0dip"
